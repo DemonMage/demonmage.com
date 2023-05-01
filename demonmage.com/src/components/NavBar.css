@@ -12,6 +12,14 @@
   font-size: 2rem;
 }
 
+.site-title.active {
+  color: #555;
+}
+
+.site-title:hover {
+  color: #777;
+}
+
 .navbar-item {
   background-color: #333;
   padding-right: 0.5rem;
