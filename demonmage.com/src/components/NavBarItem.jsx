@@ -9,7 +9,11 @@ function NavBarItem({ image, link, name, ...props }) {
 
   return (
     <div className={className}>
-      {image && <img src={image} />}
+      {image && (
+        <NavLink to={resolvedPath}>
+          <img src={image} />
+        </NavLink>
+      )}
       <NavLink to={resolvedPath}>{name}</NavLink>
     </div>
   );
