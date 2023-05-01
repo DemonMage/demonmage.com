@@ -1,0 +1,19 @@
+.navbar-container {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: #242424;
+  justify-content: center;
+  min-width: 25dvw;
+}
+
+.navbar-item {
+  background: #444141;
+  padding-right: 0.75dvw;
+}
+
+img {
+  vertical-align: bottom;
+  padding-bottom: 0.1rem;
+  padding-right: 0.2dvw;
+}
