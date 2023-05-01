@@ -3,29 +3,23 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const HOME_LINK = "/";
   const PROJECT_LINK = "/projects";
   const ABOUT_LINK = "/about";
-  let component;
-
-  switch (window.location.pathname) {
-    case HOME_LINK:
-      component = <Home />;
-      break;
-    case PROJECT_LINK:
-      component = <Projects />;
-      break;
-    case ABOUT_LINK:
-      component = <About />;
-      break;
-  }
 
   return (
     <>
       <NavBar />
-      <div className="page-container">{component}</div>
+      <div className="page-container">
+        <Routes>
+          <Route path={HOME_LINK} element={<Home />} />
+          <Route path={PROJECT_LINK} element={<Projects />} />
+          <Route path={ABOUT_LINK} element={<About />} />
+        </Routes>
+      </div>
     </>
   );
 }
