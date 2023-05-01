@@ -1,8 +1,14 @@
+//Represents a single encapsulated item in the navbar
+
 function NavBarItem(props) {
   return (
-    <div className="navbar-item">
+    <div
+      className={
+        props.className === undefined ? "navbar-item" : props.className
+      }
+    >
       <img src={props.image} />
-      {props.name}
+      <a href={props.link}>{props.name}</a>
     </div>
   );
 }

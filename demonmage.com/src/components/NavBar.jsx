@@ -1,14 +1,36 @@
 import NavBarItem from "./NavBarItem";
 
 import "./NavBar.css";
-import homeImage from "../assets/home.svg";
-import folderImage from "../assets/folder.svg";
+import HOME_IMAGE from "../assets/home.svg";
+import FOLDER_IMAGE from "../assets/folder.svg";
+import CIRCLE_IMAGE from "../assets/circle.svg";
 
+//Represents a container holding a series of items to display as a navigation bar
 function NavBar() {
+  const HOME_LINK = "/";
+  const PROJECT_LINK = "/projects";
+  const ABOUT_LINK = "/about";
+
   return (
     <div className="navbar-container">
-      <NavBarItem name="Home" image={homeImage} />
-      <NavBarItem name="Projects" image={folderImage} />
+      <NavBarItem
+        className="site-title"
+        name="Home"
+        image={HOME_IMAGE}
+        link={HOME_LINK}
+      />
+      <ul>
+        <li>
+          <NavBarItem
+            name="Projects"
+            image={FOLDER_IMAGE}
+            link={PROJECT_LINK}
+          />
+        </li>
+        <li>
+          <NavBarItem name="About" image={CIRCLE_IMAGE} link={ABOUT_LINK} />
+        </li>
+      </ul>
     </div>
   );
 }
