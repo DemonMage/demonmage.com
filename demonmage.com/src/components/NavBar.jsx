@@ -1,9 +1,9 @@
-import NavBarItem from "./NavBarItem";
 import "./NavBar.css";
+import NavBarItem from "./NavBarItem";
 import FOLDER_IMAGE from "../assets/folder.svg";
 import ABOUT_IMAGE from "../assets/about.svg";
 
-//Represents a container holding a series of items to display as a navigation bar
+//Represents a container holding a series of nav items to display as a navigation bar
 function NavBar() {
   const HOME_LINK = "/";
   const PROJECT_LINK = "/projects";
