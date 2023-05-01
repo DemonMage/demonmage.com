@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <NavBar />
-      {component}
+      <div className="page-container">{component}</div>
     </>
   );
 }

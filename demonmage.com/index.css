@@ -1,3 +1,9 @@
 body {
   background-color: #555;
 }
+
+.page-container {
+  margin: 1rem;
+  text-align: center;
+  font-size: xx-large;
+}
