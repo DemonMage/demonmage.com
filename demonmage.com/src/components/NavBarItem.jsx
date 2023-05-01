@@ -1,15 +1,16 @@
-import { Link } from "react-router-dom";
+import { NavLink, useResolvedPath } from "react-router-dom";
 
 //Represents a single encapsulated item in the navbar
 function NavBarItem({ image, link, name, ...props }) {
-  const path = window.location.pathname;
-  let className =
+  const className =
     props.className === undefined ? "navbar-item" : props.className;
+
+  const resolvedPath = useResolvedPath(link);
 
   return (
     <div className={className}>
       {image && <img src={image} />}
-      <Link to={link}>{name}</Link>
+      <NavLink to={resolvedPath}>{name}</NavLink>
     </div>
   );
 }

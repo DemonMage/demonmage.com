@@ -45,6 +45,10 @@
   height: 100%;
 }
 
+.navbar-container a.active {
+  background-color: #555;
+}
+
 .navbar-container li.active {
   color: #555;
 }
