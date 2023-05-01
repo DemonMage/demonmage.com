@@ -1,7 +1,7 @@
 import NavBarItem from "./NavBarItem";
 import "./NavBar.css";
 import FOLDER_IMAGE from "../assets/folder.svg";
-import CIRCLE_IMAGE from "../assets/circle.svg";
+import ABOUT_IMAGE from "../assets/about.svg";
 
 //Represents a container holding a series of items to display as a navigation bar
 function NavBar() {
@@ -21,7 +21,7 @@ function NavBar() {
           />
         </li>
         <li>
-          <NavBarItem name="About" image={CIRCLE_IMAGE} link={ABOUT_LINK} />
+          <NavBarItem name="About" image={ABOUT_IMAGE} link={ABOUT_LINK} />
         </li>
       </ul>
     </div>
