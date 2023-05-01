@@ -7,7 +7,7 @@ function NavBarItem(props) {
         props.className === undefined ? "navbar-item" : props.className
       }
     >
-      <img src={props.image} />
+      {props.image && <img src={props.image} />}
       <a href={props.link}>{props.name}</a>
     </div>
   );

@@ -1,7 +1,5 @@
 import NavBarItem from "./NavBarItem";
-
 import "./NavBar.css";
-import HOME_IMAGE from "../assets/home.svg";
 import FOLDER_IMAGE from "../assets/folder.svg";
 import CIRCLE_IMAGE from "../assets/circle.svg";
 
@@ -13,12 +11,7 @@ function NavBar() {
 
   return (
     <div className="navbar-container">
-      <NavBarItem
-        className="site-title"
-        name="Home"
-        image={HOME_IMAGE}
-        link={HOME_LINK}
-      />
+      <NavBarItem className="site-title" name="Home" link={HOME_LINK} />
       <ul>
         <li>
           <NavBarItem
