@@ -14,7 +14,7 @@ function Home() {
           <a href="https://ddowiki.com/page/Crateos" target="_blank">
             a silly double reference
           </a>
-          ), an American Shorthair.
+          ), he's an American Shorthair.
         </p>
       </section>
     </div>
