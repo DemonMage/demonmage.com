@@ -10,11 +10,11 @@ function Home() {
       <section>
         <p>
           Welcome! My name is Aaron and I'm a Software Engineer / Technical
-          Support Engineer. The kitty riding my shoulder is Crateos{" "}
+          Support Engineer. The kitty riding my shoulder is Crateos (
           <a href="https://ddowiki.com/page/Crateos" target="_blank">
-            (a silly double reference)
+            a silly double reference
           </a>
-          , an American Shorthair.
+          ), an American Shorthair.
         </p>
       </section>
     </div>
