@@ -45,7 +45,8 @@
 }
 
 .navbar-container a.active {
-  background-color: #555;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
 }
 
 .navbar-container li.active {
