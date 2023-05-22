@@ -4,9 +4,11 @@ import "./Home.css";
 function Home() {
   return (
     <div className="home">
-      <a href={PROFILE_PHOTO} target="_blank">
-        <img src={PROFILE_PHOTO} />
-      </a>
+      <div className="header-image">
+        <a href={PROFILE_PHOTO} target="_blank">
+          <img src={PROFILE_PHOTO} />
+        </a>
+      </div>
       <section>
         <p>
           Welcome! My name is Aaron and I'm a Software Engineer / Technical
