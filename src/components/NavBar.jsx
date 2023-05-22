@@ -20,9 +20,6 @@ function NavBar() {
             link={PROJECT_LINK}
           />
         </li>
-        <li>
-          <NavBarItem name="About" image={ABOUT_IMAGE} link={ABOUT_LINK} />
-        </li>
       </ul>
     </div>
   );
