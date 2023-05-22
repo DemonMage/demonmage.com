@@ -1,6 +1,5 @@
 .home {
   display: flex;
-  align-items: center;
   font-size: 0.75em;
 }
 
@@ -9,4 +8,11 @@
   max-height: 100px;
   border-radius: 25%;
   padding: 0.5rem;
+}
+
+.home ul {
+  display: flex;
+  list-style: inside;
+  align-content: center;
+  margin: 0.25rem;
 }
