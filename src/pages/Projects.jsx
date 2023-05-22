@@ -1,5 +1,5 @@
 import Project from "../components/Project";
-import "./Projects.CSS";
+import "./Projects.css";
 
 function Projects() {
   const mySiteName = "DemonMage.com";
