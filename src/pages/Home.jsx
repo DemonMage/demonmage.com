@@ -53,8 +53,8 @@ function Home() {
               Roleplaying Games: Such as{" "}
               <a href="https://paizo.com/pathfinder" target="_blank">
                 Pathfinder 2E
-              </a>
-              , basically anything created by{" "}
+              </a>{" "}
+              or basically anything created by{" "}
               <a
                 href="https://sine-nomine-publishing.myshopify.com/"
                 target="_blank"
