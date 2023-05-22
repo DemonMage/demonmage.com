@@ -1,2 +1,2 @@
 # DEMONMAGE.COM
-A simple webpage to host my projects
+A simple about me and portfolio website. Created in JS with React.
