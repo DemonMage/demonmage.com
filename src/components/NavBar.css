@@ -1,33 +1,49 @@
 .navbar-container {
-  background-color: #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
   padding: 0 1rem;
-}
-
-.site-title {
-  font-size: 2rem;
+  outline-style: solid;
+  outline-width: 0.1rem;
 }
 
 .site-title.active {
   color: #555;
 }
 
-.site-title:hover {
-  color: #777;
-}
-
 .navbar-item {
-  background-color: #333;
   padding-right: 0.5rem;
 }
 
 .navbar-container img {
-  vertical-align: bottom;
+  vertical-align: middle;
   padding-bottom: 0.1rem;
   padding-right: 0.2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar-container img {
+    filter: invert(100%);
+  }
+
+  html {
+    color: #dad6d6;
+  }
+
+  .site-title:hover {
+    color: #777777;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .navbar-item:hover {
+    color: blueviolet;
+  }
+
+  .site-title:hover {
+    color: blueviolet;
+  }
 }
 
 .navbar-container ul {
