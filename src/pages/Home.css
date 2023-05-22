@@ -15,10 +15,5 @@
   list-style: inside;
   align-content: center;
   margin: 0.25rem;
-}
-
-@media screen and (max-width: 600px) {
-  .home {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
 }
