@@ -1,14 +1,18 @@
+import "./Project.css";
+
 function Project({ name, url, description, ...props }) {
   return (
-    <section className="project-container">
-      <div className="project-name">{name}</div>
-      <div className="project-description">{description}</div>
-      <div className="project-link">
-        <a href={url} target="_blank">
-          GitHub
-        </a>
-      </div>
-    </section>
+    <div className="project-outline">
+      <section className="project-container">
+        <section className="project-name">{name}</section>
+        <section className="project-description">{description}</section>
+        <section className="project-link">
+          <a href={url} target="_blank">
+            GitHub
+          </a>
+        </section>
+      </section>
+    </div>
   );
 }
 export default Project;
