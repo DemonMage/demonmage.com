@@ -20,48 +20,56 @@ function Home() {
         </p>
         <ul>
           <li>
-            Videos Games: Especially RPGs like{" "}
-            <a
-              href="https://store.steampowered.com/app/435150/Divinity_Original_Sin_2__Definitive_Edition/"
-              target="_blank"
-            >
-              Original Sin
-            </a>{" "}
-            or{" "}
-            <a
-              href="https://store.steampowered.com/bundle/379/Baldurs_Gate_The_Classic_Saga_Ultimate_Bundle/"
-              target="_blank"
-            >
-              Baldur's Gate
-            </a>
-            !
+            <span className="info-details">
+              Videos Games: Especially RPGs like{" "}
+              <a
+                href="https://store.steampowered.com/app/435150/Divinity_Original_Sin_2__Definitive_Edition/"
+                target="_blank"
+              >
+                Original Sin
+              </a>{" "}
+              or{" "}
+              <a
+                href="https://store.steampowered.com/bundle/379/Baldurs_Gate_The_Classic_Saga_Ultimate_Bundle/"
+                target="_blank"
+              >
+                Baldur's Gate
+              </a>
+              !
+            </span>
           </li>
           <li>
-            Fantasy & Sci-Fi Reading: Good examples are anything by{" "}
-            <a href="https://djangowexler.com/" target="_blank">
-              Django Wexler
-            </a>
-            ,{" "}
-            <a href="https://rachelaaron.net/books.php" target="_blank">
-              Rachel Aaron
-            </a>
-            , or{" "}
-            <a href="https://nkjemisin.com/writing/" target="_blank">
-              N.K. Jemisin
-            </a>
+            <span className="info-details">
+              Fantasy & Sci-Fi Reading: Good examples are anything by{" "}
+              <a href="https://djangowexler.com/" target="_blank">
+                Django Wexler
+              </a>
+              ,{" "}
+              <a href="https://rachelaaron.net/books.php" target="_blank">
+                Rachel Aaron
+              </a>
+              , or{" "}
+              <a href="https://nkjemisin.com/writing/" target="_blank">
+                N.K. Jemisin
+              </a>
+              .
+            </span>
           </li>
           <li>
-            Roleplaying Games: Such as{" "}
-            <a href="https://paizo.com/pathfinder" target="_blank">
-              Pathfinder 2E
-            </a>{" "}
-            or basically anything created by{" "}
-            <a
-              href="https://sine-nomine-publishing.myshopify.com/"
-              target="_blank"
-            >
-              Kevin Crawford
-            </a>
+            <span className="info-details">
+              Roleplaying Games: Such as{" "}
+              <a href="https://paizo.com/pathfinder" target="_blank">
+                Pathfinder 2E
+              </a>{" "}
+              or basically anything created by{" "}
+              <a
+                href="https://sine-nomine-publishing.myshopify.com/"
+                target="_blank"
+              >
+                Kevin Crawford
+              </a>
+              .
+            </span>
           </li>
         </ul>
       </section>
