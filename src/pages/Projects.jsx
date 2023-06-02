@@ -31,7 +31,7 @@ function Projects() {
           <section className="project-section-title">{section.title}</section>
           <div className="projects">
             {/* Pull each project from the data and emit the details */}
-            {section.project.map((projectDetails, index) => (
+            {section.project.map((projectDetails) => (
               <div className="project-container" key={crypto.randomUUID()}>
                 <Project
                   name={projectDetails.title}
