@@ -1,25 +1,42 @@
+import { useEffect, useState } from "react";
 import Project from "../components/Project";
 import "./Projects.css";
 
 function Projects() {
-  const topProjectSectionTitle = "React Projects";
+  const [projectData, setProjectData] = useState();
 
-  const mySiteName = "DemonMage.com";
-  const mySiteProjectURL = "https://github.com/DemonMage/demonmage.com";
-  const mySiteDescription =
-    "A simple about me and portfolio website. Created in JS with React.";
+  useEffect(() => {
+    const getData = async () => {
+      const projectJSON = await fetch("./data/projects.json");
+      setProjectData(await projectJSON.json());
+      console.log(projectData);
+    };
+    getData();
+  }, []);
+
+  while (projectData == null) {
+    return (
+      <>
+        <h4>Loading</h4>
+      </>
+    );
+  }
 
   return (
     <>
       <section className="project-section-title">
-        {topProjectSectionTitle}
+        {projectData.section.title}
       </section>
       <div className="projects">
-        <Project
-          name={mySiteName}
-          url={mySiteProjectURL}
-          description={mySiteDescription}
-        />
+        {projectData.section.project.map((projectDetails, index) => (
+          <div className="project-container" key={crypto.randomUUID()}>
+            <Project
+              name={projectDetails.title}
+              links={projectDetails.link}
+              description={projectDetails.description}
+            />
+          </div>
+        ))}
       </div>
     </>
   );

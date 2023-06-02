@@ -1,12 +1,19 @@
 .projects {
   display: flex;
-  flex-wrap: wrap;
   font-size: 1rem;
   justify-content: center;
-  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-container {
+  margin: 0.5rem;
 }
 
 .project-section-title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
+}
+
+.project-outline {
+  padding: 1rem;
 }
