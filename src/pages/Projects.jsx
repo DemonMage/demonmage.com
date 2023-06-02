@@ -5,6 +5,7 @@ import "./Projects.css";
 function Projects() {
   const [projectData, setProjectData] = useState();
 
+  //Load in the project data on initial mount
   useEffect(() => {
     const getData = async () => {
       const projectJSON = await fetch("./data/projects.json");
@@ -14,10 +15,11 @@ function Projects() {
     getData();
   }, []);
 
-  while (projectData == null) {
+  //Show loading while pulling in the project data
+  if (projectData == null) {
     return (
       <>
-        <h4>Loading</h4>
+        <h4>Loading...</h4>
       </>
     );
   }
@@ -28,6 +30,7 @@ function Projects() {
         {projectData.section.title}
       </section>
       <div className="projects">
+        {/* Loop through the data and emit all the projects */}
         {projectData.section.project.map((projectDetails, index) => (
           <div className="project-container" key={crypto.randomUUID()}>
             <Project
