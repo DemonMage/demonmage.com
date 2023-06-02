@@ -10,7 +10,6 @@ function Projects() {
     const getData = async () => {
       const projectJSON = await fetch("./data/projects.json");
       setProjectData(await projectJSON.json());
-      console.log(projectData);
     };
     getData();
   }, []);
