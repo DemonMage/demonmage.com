@@ -1,31 +1,33 @@
 {
-  "section": {
-    "title": "JS/React",
-    "project": [
-      {
-        "title": "DemonMage.com",
-        "description": "A simple about me and portfolio website. Created in JS with React.",
-        "link": [
-          {
-            "name": "GitHub",
-            "url": "https://github.com/DemonMage/demonmage.com"
-          }
-        ]
-      },
-      {
-        "title": "Google Maps Platform Basemap",
-        "description": "An example of a basic Google Maps Platform implementation with map, autocomplete, and marker support.",
-        "link": [
-          {
-            "name": "GitHub",
-            "url": "https://github.com/DemonMage/base-google-map"
-          },
-          {
-            "name": "JSFiddle",
-            "url": "https://jsfiddle.net/DemonMage/gocw4zmv/"
-          }
-        ]
-      }
-    ]
-  }
+  "section": [
+    {
+      "title": "JS/React",
+      "project": [
+        {
+          "title": "DemonMage.com",
+          "description": "A simple about me and portfolio website. Created in JS with React.",
+          "link": [
+            {
+              "name": "GitHub",
+              "url": "https://github.com/DemonMage/demonmage.com"
+            }
+          ]
+        },
+        {
+          "title": "Google Maps Platform Basemap",
+          "description": "An example of a basic Google Maps Platform implementation with map, autocomplete, and marker support.",
+          "link": [
+            {
+              "name": "GitHub",
+              "url": "https://github.com/DemonMage/base-google-map"
+            },
+            {
+              "name": "JSFiddle",
+              "url": "https://jsfiddle.net/DemonMage/gocw4zmv/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

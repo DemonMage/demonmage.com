@@ -25,21 +25,24 @@ function Projects() {
 
   return (
     <>
-      <section className="project-section-title">
-        {projectData.section.title}
-      </section>
-      <div className="projects">
-        {/* Loop through the data and emit all the projects */}
-        {projectData.section.project.map((projectDetails, index) => (
-          <div className="project-container" key={crypto.randomUUID()}>
-            <Project
-              name={projectDetails.title}
-              links={projectDetails.link}
-              description={projectDetails.description}
-            />
+      {/* Pull each project section from the data */}
+      {projectData.section.map((section) => (
+        <div key={crypto.randomUUID()}>
+          <section className="project-section-title">{section.title}</section>
+          <div className="projects">
+            {/* Pull each project from the data and emit the details */}
+            {section.project.map((projectDetails, index) => (
+              <div className="project-container" key={crypto.randomUUID()}>
+                <Project
+                  name={projectDetails.title}
+                  links={projectDetails.link}
+                  description={projectDetails.description}
+                />
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </>
   );
 }
