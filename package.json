@@ -25,10 +25,7 @@
     "vite": "^8.0.16"
   },
   "overrides": {
-    "brace-expansion": "^5.0.8",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "react-router": "^8.3.0"
+    "brace-expansion": "^5.0.8"
   },
   "resolutions": {
     "word-wrap": "npm:@aashutoshrathi/word-wrap"
