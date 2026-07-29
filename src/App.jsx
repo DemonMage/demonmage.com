@@ -1,7 +1,7 @@
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router/dom";
 
 function App() {
   const HOME_LINK = "/";
