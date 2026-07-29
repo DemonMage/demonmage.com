@@ -1,4 +1,4 @@
-import { NavLink, useResolvedPath } from "react-router-dom";
+import { NavLink, useResolvedPath } from "react-router/dom";
 
 //Represents a single encapsulated item in the navbar
 function NavBarItem({ image, link, name, ...props }) {
